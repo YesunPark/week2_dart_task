@@ -23,7 +23,7 @@ void main(List<String> arguments) {
       case '3':
         mall.showTotal();
         break;
-      case '4':
+      case '4': // 필수 기능 4. 쇼핑몰 종료기능
         print('이용해 주셔서 감사합니다 ~ 안녕히 가세요 !');
         isRunning = false;
         return;
@@ -77,6 +77,7 @@ class ShoppingMall {
     stdout.write('상품 개수를 입력해 주세요 ! \n');
     String? inputCount = stdin.readLineSync();
 
+    // 상품 명 및 상품 개수 입력값 검증
     Product product;
     try {
       product = products.firstWhere((p) => p.name == inputProductName);
@@ -101,9 +102,7 @@ class ShoppingMall {
     for (int i = 0; i < count; i++) {
       cart.add(product);
     }
-
     totalPrice += product.price * count;
-
     print('장바구니에 상품이 담겼어요 !');
   }
 
@@ -112,7 +111,4 @@ class ShoppingMall {
     int totalPrice = cart.fold(0, (sum, product) => sum + product.price);
     print('장바구니에 $totalPrice원 어치를 담으셨네요 ! ');
   }
-
-  // // 필수 기능 4. 쇼핑몰 프로그램 종료
-  // void closeShoppingMall() {}
 }
