@@ -1,2 +1,13 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# 쇼핑몰 프로젝트
+
+스파르타코딩클럽 내일배움캠프 앱 창업 7기 2주차 개인과제
+
+필수 기능 4가지를 구현한 프로젝트 입니다.
+
+### 1. 판매하는 상품 목록을 볼 수 있는 기능
+
+### 2. 상품을 장바구니에 담을 수 있는 기능
+
+### 3. 장바구니에 담은 상품들의 총 가격을 볼 수 있는 기능
+
+### 4. 쇼핑몰 프로그램을 종료할 수 있는 기능
